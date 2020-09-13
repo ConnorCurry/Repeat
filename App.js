@@ -14,6 +14,7 @@ import { AccountScreen } from './Screens/AccountScreen.js'
 import { FirstLaunch } from './Components/FirstLaunch.js'
 
 //edited from my pc
+//edited from my mac
 
 const Tab = createBottomTabNavigator();
 
