@@ -13,6 +13,7 @@ import { PracticeScreen } from './Screens/PracticeScreen.js'
 import { AccountScreen } from './Screens/AccountScreen.js'
 import { FirstLaunch } from './Components/FirstLaunch.js'
 
+//edited from my pc
 
 const Tab = createBottomTabNavigator();
 
