@@ -1,3 +1,4 @@
+import { Signika_400Regular, Signika_600SemiBold } from '@expo-google-fonts/signika';
 import { StyleSheet, Dimensions } from 'react-native';
 import { screensEnabled } from 'react-native-screens';
 
@@ -43,7 +44,7 @@ export const styles = StyleSheet.create({
 
     headerStyle: {
         backgroundColor: "mediumpurple",
-        shadowColor: 'mediumpurple'
+        shadowColor: 'mediumpurple',
     },
 
     practiceHeader: {
@@ -70,6 +71,7 @@ export const styles = StyleSheet.create({
         marginRight: 10,
         marginBottom: 5,
         color: 'white',
+        fontFamily: 'Signika_400Regular',
     },
 
     innerPracticeHeaderText: {

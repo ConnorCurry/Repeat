@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo-google-fonts/signika": "^0.1.0",
     "@react-native-community/async-storage": "~1.11.0",
     "@react-native-community/cameraroll": "^4.0.0",
     "@react-native-community/masked-view": "0.1.10",

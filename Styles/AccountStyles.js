@@ -20,12 +20,14 @@ export const accountStyles = StyleSheet.create({
         alignSelf: 'center',
         fontSize: screenSize * 4,
         color: 'white',
+        fontFamily: 'Signika_600SemiBold',
     },
     headerText: {
         fontSize: screenSize * 3,
         color: 'gray',
         textAlignVertical: 'bottom',
-        margin: 10
+        margin: 10,
+        fontFamily: 'Signika_600SemiBold',
     },
     infoView: {
         margin: 10,
@@ -46,6 +48,7 @@ export const accountStyles = StyleSheet.create({
         fontSize: screenSize * 3,
         margin: 10,
         width: '35%',
+        fontFamily: 'Signika_400Regular',
     },
     instrumentRenameText: {
         fontSize: screenSize * 3,

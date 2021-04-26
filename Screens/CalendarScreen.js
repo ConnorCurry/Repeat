@@ -108,6 +108,7 @@ export function CalendarScreen({navigation}) {
                 headerTitleAllowFontScaling: false,
                 headerStyle: styles.headerStyle,
                 headerTintColor: "white",
+                headerTitleStyle: {fontFamily: 'Signika_600SemiBold'},
             }}
             />
             <Stack.Screen name="OldSession" component={OldSession} 

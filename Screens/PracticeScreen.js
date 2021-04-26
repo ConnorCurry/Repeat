@@ -220,6 +220,7 @@ export function PracticeScreen({navigation}) {
                 headerTitleAllowFontScaling: false,
                 headerStyle: {backgroundColor: "mediumpurple", shadowColor: 'mediumpurple', elevation: 0,},
                 headerTintColor: "white",
+                headerTitleStyle: {fontFamily: 'Signika_600SemiBold'},
                 headerRight: () => (
                     <View style={{marginRight: 5}}>
                         {keyboardShowing ? 

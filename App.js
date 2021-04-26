@@ -5,6 +5,7 @@ import AsyncStorage from '@react-native-community/async-storage'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons, Feather } from '@expo/vector-icons';
 import { MenuProvider, Menu } from 'react-native-popup-menu';
+import {useFonts, Signika_400Regular, Signika_300Light, Signika_600SemiBold,} from '@expo-google-fonts/signika'
 import { Audio } from 'expo-av'
 import * as Constants from 'expo'
 import { styles } from './Styles/Style.js'
@@ -12,9 +13,8 @@ import { CalendarScreen } from './Screens/CalendarScreen.js'
 import { PracticeScreen } from './Screens/PracticeScreen.js'
 import { AccountScreen } from './Screens/AccountScreen.js'
 import { FirstLaunch } from './Components/FirstLaunch.js'
+import { color } from 'react-native-reanimated';
 
-//edited from my pc
-//edited from my mac
 
 const Tab = createBottomTabNavigator();
 
@@ -40,7 +40,13 @@ export default function App() {
     }
     React.useEffect(() => {checkFirstLaunch();}, []);
     
-    
+    let [fontsLoaded] = useFonts({
+        Signika_400Regular, Signika_300Light, Signika_600SemiBold,
+    });
+
+    if (!fontsLoaded) {
+        return (<Text style={{fontFamily: 'Signika_300Light'}}>"App Loading"</Text>)
+    }
 
     return (
         <MenuProvider>
