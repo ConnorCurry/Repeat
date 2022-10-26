@@ -1,4 +1,4 @@
-import { Signika_300Light, Signika_400Regular, Signika_600SemiBold } from '@expo-google-fonts/signika';
+// import { Signika_300Light, Signika_400Regular, Signika_600SemiBold } from '@expo-google-fonts/signika';
 import { StyleSheet, Dimensions } from 'react-native';
 
 let screenSize = (Dimensions.get("window").width * Dimensions.get('window').height) / 49000;
@@ -25,13 +25,13 @@ export const practiceStyles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: screenSize * 8,
         textAlign: 'center',
-        fontFamily: 'Signika_600SemiBold'
+        // fontFamily: 'Signika_600SemiBold'
     },
 
     text: {
         fontSize: screenSize * 3,
         textAlign: 'center',
-        fontFamily: 'Signika_400Regular',
+        // fontFamily: 'Signika_400Regular',
     }, 
 
     instrumentPickText: {
@@ -40,7 +40,7 @@ export const practiceStyles = StyleSheet.create({
         textAlign: 'center',
         fontSize: screenSize * 3,
         width: '100%',
-        fontFamily: 'Signika_400Regular',
+        // fontFamily: 'Signika_400Regular',
     },
 
     stopPauseView: {

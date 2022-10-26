@@ -122,24 +122,26 @@ function practiceWindow() {
             await setPracticeObjects([])
             saveNew(start)
         }
-        useFocusEffect(() => {
-            const loadInstrumentsLaunch = async () => {
-                try{
-                    const jsonValue = await AsyncStorage.getItem('instrumentArray');
-                    let instruments = JSON.parse(jsonValue);
-                    let temp = []
-                    instruments.forEach((item) => {
-                        temp.push({label: item.name, value: [item.key, item.name, item.goal]})
-                    })
-                    setInstrumentArray(temp)
-                } catch (e) {
-                    console.log("Error loading instruments: ", e)
+        useFocusEffect(
+            React.useCallback(() => {
+                const loadInstrumentsLaunch = async () => {
+                    try{
+                        const jsonValue = await AsyncStorage.getItem('instrumentArray');
+                        let instruments = JSON.parse(jsonValue);
+                        let temp = []
+                        instruments.forEach((item) => {
+                            temp.push({label: item.name, value: [item.key, item.name, item.goal]})
+                        })
+                        setInstrumentArray(temp)
+                    } catch (e) {
+                        console.log("Error loading instruments: ", e)
+                    }
                 }
-            }
-            if (!practicing){
-                loadInstrumentsLaunch()
-            }
-        }, [])
+                if (!practicing){
+                    loadInstrumentsLaunch()
+                }
+            }, [])
+        )
         const loadInstruments = async () => {
             try{
                 const jsonValue = await AsyncStorage.getItem('instrumentArray');
@@ -220,7 +222,7 @@ export function PracticeScreen({navigation}) {
                 headerTitleAllowFontScaling: false,
                 headerStyle: {backgroundColor: "mediumpurple", shadowColor: 'mediumpurple', elevation: 0,},
                 headerTintColor: "white",
-                headerTitleStyle: {fontFamily: 'Signika_600SemiBold'},
+                // headerTitleStyle: {fontFamily: 'Signika_600SemiBold'},
                 headerRight: () => (
                     <View style={{marginRight: 5}}>
                         {keyboardShowing ? 

@@ -11,7 +11,7 @@ import { SimpleLineIcons, AntDesign, MaterialCommunityIcons, MaterialIcons } fro
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextInput } from 'react-native-gesture-handler';
 import CameraRoll from '@react-native-community/cameraroll'
-import { Signika_400Regular } from '@expo-google-fonts/signika';
+// import { Signika_400Regular } from '@expo-google-fonts/signika';
 
 let screenSize = (Dimensions.get("window").width * Dimensions.get('window').height) / 49000;
 const Stack = createStackNavigator();
@@ -318,7 +318,7 @@ export function AccountScreen({navigation, callback}) {
                     headerStyle: styles.headerStyle,
                     headerRightContainerStyle: styles.rightHeaderContainer,
                     headerTintColor: 'white',
-                    headerTitleStyle: {fontFamily: 'Signika_600SemiBold'}
+                    // headerTitleStyle: {fontFamily: 'Signika_600SemiBold'}
                 }}
             >
                 

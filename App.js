@@ -5,15 +5,15 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons, Feather } from '@expo/vector-icons';
 import { MenuProvider, Menu } from 'react-native-popup-menu';
-import {useFonts, Signika_400Regular, Signika_300Light, Signika_600SemiBold,} from '@expo-google-fonts/signika'
-import { Audio } from 'expo-av'
-import * as Constants from 'expo'
+// import {useFonts, Signika_400Regular, Signika_300Light, Signika_600SemiBold,} from '@expo-google-fonts/signika'
+// import { Audio } from 'expo-av'
+// import * as Constants from 'expo'
 import { styles } from './Styles/Style.js'
 import { CalendarScreen } from './Screens/CalendarScreen.js'
 import { PracticeScreen } from './Screens/PracticeScreen.js'
 import { AccountScreen } from './Screens/AccountScreen.js'
 import { FirstLaunch } from './Components/FirstLaunch.js'
-import { color } from 'react-native-reanimated';
+// import { color } from 'react-native-reanimated';
 
 
 const Tab = createBottomTabNavigator();
@@ -40,13 +40,13 @@ export default function App() {
     }
     React.useEffect(() => {checkFirstLaunch();}, []);
     
-    let [fontsLoaded] = useFonts({
-        Signika_400Regular, Signika_300Light, Signika_600SemiBold,
-    });
+    // let [fontsLoaded] = useFonts({
+    //     Signika_400Regular, Signika_300Light, Signika_600SemiBold,
+    // });
 
-    if (!fontsLoaded) {
-        return (<Text style={{fontFamily: 'Signika_300Light'}}>"App Loading"</Text>)
-    }
+    // if (!fontsLoaded) {
+    //     return (<Text style={{fontFamily: 'Signika_300Light'}}>"App Loading"</Text>)
+    // }
 
     return (
         <MenuProvider>
@@ -56,15 +56,25 @@ export default function App() {
             style={styles.tabBar}
             initialRouteName="Practice"
             lazy={true}
-            tabBarOptions={{
-                activeBackgroundColor: "lightgray",
-                activeTintColor: "mediumpurple",
-                inactiveTintColor: "gray",
-                labelStyle: styles.tabLabelStyle,
-                tabStyle: styles.tabStyle,
-                style: styles.tabBar,
-                allowFontScaling: true,
-                showLabel: false,
+            screenOptions={{
+                "tabBarActiveTintColor": "mediumpurple",
+                "tabBarInactiveTintColor": "gray",
+                "tabBarActiveBackgroundColor": "lightgray",
+                "tabBarAllowFontScaling": true,
+                "tabBarShowLabel": false,
+                "tabBarLabelStyle": {
+                    "fontSize": 15,
+                    "flex": 1
+                },
+                "tabBarItemStyle": {
+                    "justifyContent": "center"
+                },
+                "tabBarStyle": [
+                    {
+                    "display": "flex"
+                    },
+                    null
+                ]
             }}
             >
             <Tab.Screen 
