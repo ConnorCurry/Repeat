@@ -101,6 +101,7 @@ export function Calendar({callbackDay, callbackMonth, callbackYear}) {
                                     width: screenSize * 7, 
                                     height: screenSize * 7,}}
                                     onPress={() => setDay(item)}
+                                    key={item}
                                     >
                                     <Text allowFontScaling={false} style={{fontWeight: (item != current.getDate() || month != current.getMonth() || year != current.getFullYear()) ? "normal" : "800",
                                         color: (selectedDay == item) ? "white" : "black", 
@@ -114,14 +115,14 @@ export function Calendar({callbackDay, callbackMonth, callbackYear}) {
                             )
                         } else {
                             return (
-                                <View style={{width: screenSize * 7, height: screenSize * 7}}>
+                                <View key={item + Math.random()} style={{width: screenSize * 7, height: screenSize * 7}}>
                                     <Text></Text>
                                 </View>
                             )
                         }
                     })
                     return(
-                        <View style={{flexDirection: 'row', alignContent: 'space-between'}}>{x}</View>
+                        <View key={row} style={{flexDirection: 'row', alignContent: 'space-between'}}>{x}</View>
                     )
                 })}
             </View>
