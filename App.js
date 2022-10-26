@@ -55,7 +55,6 @@ export default function App() {
             <Tab.Navigator 
             style={styles.tabBar}
             initialRouteName="Practice"
-            lazy={true}
             screenOptions={{
                 "tabBarActiveTintColor": "mediumpurple",
                 "tabBarInactiveTintColor": "gray",
@@ -74,7 +73,8 @@ export default function App() {
                     "display": "flex"
                     },
                     null
-                ]
+                ],
+                lazy: true
             }}
             >
             <Tab.Screen 
