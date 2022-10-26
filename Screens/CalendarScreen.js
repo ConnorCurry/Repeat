@@ -103,7 +103,7 @@ export function CalendarScreen({navigation}) {
     }
     return(
         <Stack.Navigator>
-            <Stack.Screen name="CalendarContainer" component={CalendarWindow}
+            <Stack.Screen name="Calendar" component={CalendarWindow}
             options={{
                 headerTitleAllowFontScaling: false,
                 headerStyle: styles.headerStyle,
@@ -117,6 +117,7 @@ export function CalendarScreen({navigation}) {
                 headerStyle: {backgroundColor: "mediumpurple", shadowColor: 'mediumpurple', elevation: 0,},
                 headerTintColor: 'white',
                 headerTitle: 'Practice',
+                // TODO: Move this to the App.js header
                 headerRight: () => (
                     <View>
                         {keyboardShowing ? 

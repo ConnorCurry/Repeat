@@ -78,23 +78,26 @@ export default function App() {
             }}
             >
             <Tab.Screen 
-                name="Calendar" 
+                name="CalendarContainer" 
                 component={CalendarScreen}
                 options={{
-                tabBarIcon: ({focused}) => <MaterialCommunityIcons focused={focused} name='calendar' size={25} color={focused ? 'mediumpurple' : 'lightgray'}/>,}}
+                    headerShown: false,
+                    tabBarIcon: ({focused}) => <MaterialCommunityIcons focused={focused} name='calendar' size={25} color={focused ? 'mediumpurple' : 'lightgray'}/>,}}
                 />
             <Tab.Screen 
                 name="Practice" 
                 component={PracticeScreen}
                 options={{
-                tabBarIcon: ({focused}) => <MaterialCommunityIcons focused={focused} name='music-clef-treble' size={50} color={focused ? 'mediumpurple' : 'lightgray'}/>,}}
+                    headerStyle: styles.headerStyle,
+                    headerTintColor: 'white',
+                    tabBarIcon: ({focused}) => <MaterialCommunityIcons focused={focused} name='music-clef-treble' size={50} color={focused ? 'mediumpurple' : 'lightgray'}/>,}}
                 />
             <Tab.Screen 
-                name="Account"
+                name="AccountContainer"
                 component={AccountScreen}
                 options={{
-                tabBarIcon: ({focused}) => <Feather focused={focused} name='user' size={25} color={focused ? 'mediumpurple' : 'lightgray'}/>,}}
-                
+                    headerShown: false,
+                    tabBarIcon: ({focused}) => <Feather focused={focused} name='user' size={25} color={focused ? 'mediumpurple' : 'lightgray'}/>,}}
                 />
             </Tab.Navigator>
         </NavigationContainer>

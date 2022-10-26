@@ -216,23 +216,6 @@ export function PracticeScreen({navigation}) {
         setKeyboardShowing(false)
     }
     return(
-        <Stack.Navigator>
-            <Stack.Screen name="PracticeContainer" component={PracticeWindow}
-            options={{
-                headerTitleAllowFontScaling: false,
-                headerStyle: {backgroundColor: "mediumpurple", shadowColor: 'mediumpurple', elevation: 0,},
-                headerTintColor: "white",
-                // headerTitleStyle: {fontFamily: 'Signika_600SemiBold'},
-                headerRight: () => (
-                    <View style={{marginRight: 5}}>
-                        {keyboardShowing ? 
-                        <Button title={"Done"} onPress={() => Keyboard.dismiss()} color={"white"} />
-                        : 
-                        null}
-                    </View>
-                ),
-            }}
-            />
-        </Stack.Navigator>
+        <PracticeWindow/>
     )
 }
