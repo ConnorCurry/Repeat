@@ -55,6 +55,7 @@ export default function App() {
             <Tab.Navigator 
             style={styles.tabBar}
             initialRouteName="Practice"
+            // TODO: Add keyboard listener to hide when done
             screenOptions={{
                 "tabBarActiveTintColor": "mediumpurple",
                 "tabBarInactiveTintColor": "gray",
