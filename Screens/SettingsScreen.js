@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Text, ScrollView, View, Alert, DevSettings } from 'react-native';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { styles } from '../Styles/Style.js'
 import { TouchableHighlight } from 'react-native-gesture-handler';
 

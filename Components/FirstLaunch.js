@@ -5,7 +5,7 @@ import { Button } from '../Components/Button'
 import Swiper from 'react-native-swiper'
 import { firstLaunchStyles } from '../Styles/FirstLaunchStyles'
 import { TextInput } from "react-native-gesture-handler";
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 let screenSize = (Dimensions.get("window").width * Dimensions.get('window').height) / 49000;
 export function FirstLaunch() {

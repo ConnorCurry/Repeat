@@ -8,7 +8,7 @@ import { practiceStyles} from '../Styles/PracticeScreenStyles';
 import { accountStyles } from '../Styles/AccountStyles.js';
 import { SettingsScreen } from './SettingsScreen.js';
 import { SimpleLineIcons, AntDesign, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons'; 
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextInput } from 'react-native-gesture-handler';
 import CameraRoll from '@react-native-community/cameraroll'
 import { Signika_400Regular } from '@expo-google-fonts/signika';

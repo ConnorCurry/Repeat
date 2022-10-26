@@ -3,7 +3,7 @@ import { Text, View, TouchableOpacity, ActionSheetIOS, Alert, Dimensions, Platfo
 import { createStackNavigator } from '@react-navigation/stack';
 import RNPickerSelect from 'react-native-picker-select';
 import { MaterialIcons } from '@expo/vector-icons';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Button } from '../Components/Button';
 import { styles } from '../Styles/Style.js';
 import { practiceStyles } from '../Styles/PracticeScreenStyles.js';

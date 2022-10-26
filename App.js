@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StatusBar, View, Animated, Dimensions, Text, } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import AsyncStorage from '@react-native-community/async-storage'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons, Feather } from '@expo/vector-icons';
 import { MenuProvider, Menu } from 'react-native-popup-menu';

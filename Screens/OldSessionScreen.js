@@ -2,7 +2,7 @@ import * as React from 'react'
 import { View, Text, FlatList, TextInput, Button, TouchableOpacity, Dimensions, ActionSheetIOS, Alert, Image, Modal } from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
 import ImageViewer from 'react-native-image-zoom-viewer';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Menu, MenuOptions, MenuOption, MenuTrigger, renderers } from 'react-native-popup-menu'
 import { KeyboardAwareFlatList } from 'react-native-keyboard-aware-scroll-view'
 import * as ImagePicker from 'expo-image-picker';
