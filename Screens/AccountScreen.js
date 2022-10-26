@@ -304,7 +304,7 @@ export function AccountScreen({navigation, callback}) {
     return(
         <Stack.Navigator initialRouteName>
             <Stack.Screen
-                name="Account"
+                name="AccountContainer"
                 component={AccountScreenView}
                 // initialParams={editing}
                 options={{

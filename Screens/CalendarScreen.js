@@ -103,7 +103,7 @@ export function CalendarScreen({navigation}) {
     }
     return(
         <Stack.Navigator>
-            <Stack.Screen name="Calendar" component={CalendarWindow}
+            <Stack.Screen name="CalendarContainer" component={CalendarWindow}
             options={{
                 headerTitleAllowFontScaling: false,
                 headerStyle: styles.headerStyle,
