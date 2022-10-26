@@ -17,11 +17,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.connorc17.Repeat"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": ""
+    "description": "",
+    "extra": {
+      "eas": {
+        "projectId": "b80c4b50-238a-4e1b-9a92-a40906adc42b"
+      }
+    },
+    "android": {
+      "package": "com.connorc17.Repeat"
+    }
   }
 }
