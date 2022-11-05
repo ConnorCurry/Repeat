@@ -85,22 +85,6 @@ function CalendarWindow({ route, navigation }) {
 }
 const Stack = createStackNavigator();
 export function CalendarScreen({navigation}) {
-    const [keyboardShowing, setKeyboardShowing] = React.useState(false);
-    React.useEffect(() => {
-        Keyboard.addListener("keyboardDidShow", _keyboardDidShow);
-        Keyboard.addListener("keyboardDidHide", _keyboardDidHide);
-        // cleanup function
-        return () => {
-          Keyboard.removeListener("keyboardDidShow", _keyboardDidShow);
-          Keyboard.removeListener("keyboardDidHide", _keyboardDidHide);
-        };
-      }, []);
-    const _keyboardDidShow = () => {
-        setKeyboardShowing(true)
-    }
-    const _keyboardDidHide = () => {
-        setKeyboardShowing(false)
-    }
     return(
         <Stack.Navigator>
             <Stack.Screen name="Calendar" component={CalendarWindow}
